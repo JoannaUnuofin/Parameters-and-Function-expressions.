@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parameters and Function expressions</title>
+</head>
+
+<body>
+    <script>
+        let oddOrEven = function (number) {
+            if (number % 2 === 0) {
+                document.write(number + " is an even number");
+            } else {
+                document.write(number + " is an odd number");
+            }
+        }
+
+        let input = prompt("Enter the number:");
+        let number = parseInt(input);  // Ensure it's treated as an integer
+
+        if (isNaN(number)) {
+            document.write("Invalid input. Please enter a valid number.");
+        } else {
+            oddOrEven(number);
+        }
+    </script>
+</body>
+
+</html>
